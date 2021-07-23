@@ -1,8 +1,8 @@
 class BytehouseCli < Formula
   desc "ByteHouse SQL Gateway Command-Line Interface"
   homepage "https://github.com/bytehouse-cloud/cli"
-  url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.4/bytehouse-darwin-amd64"
-  sha256 "04a6a742c53ca89d3a9209a17f5b911585fc9e466fc8b08e050ad51d33e09556"
+  url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.4.1/bytehouse-darwin-amd64"
+  sha256 "0c90fee9072b210ffcceea1a8e01be097603ace685ddf3a65a8deab1da8cad2e"
   license "Apache 2.0"
   revision 1
 
