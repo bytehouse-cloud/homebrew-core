@@ -1,13 +1,13 @@
 class BytehouseCli < Formula
   desc "ByteHouse SQL Gateway Command-Line Interface"
   homepage "https://github.com/bytehouse-cloud/cli"
-  url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.22/bytehouse-v1.5.22-darwin-amd64"
-  sha256 "1d0afc450b50421369f85cb0f3bd637018adf445a6de698f2b0b0e5d5b9aeef6"
+  url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.23/bytehouse-v1.5.23-darwin-amd64"
+  sha256 "27648400f1d391b76e82a995e532d8e43dd95a4a6f9b419536f8b59c6be5cf7a"
   license "Apache 2.0"
-  version "v1.5.22"
+  version "v1.5.23"
 
   def install
-    File.rename("bytehouse-v1.5.22-darwin-amd64", "bytehouse-cli")
+    File.rename("bytehouse-v1.5.23-darwin-amd64", "bytehouse-cli")
     bin.install "bytehouse-cli"
   end
 
