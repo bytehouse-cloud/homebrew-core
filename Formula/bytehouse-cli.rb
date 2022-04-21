@@ -5,13 +5,13 @@
 class BytehouseCli < Formula
   desc "ByteHouse SQL Gateway Command-Line Interface"
   homepage "https://github.com/bytehouse-cloud/cli"
-  version "1.6.24"
+  version "1.5.27"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.6.24/bytehouse-cli_1.6.24_macOS_x86_64.tar.gz"
-      sha256 "a94c0fc697e88b8cd643c8e59aab23999871359b80bf244ffeeeb76fe07f2249"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.27/bytehouse-cli_1.5.27_macOS_x86_64.tar.gz"
+      sha256 "77d35ba772ba14dbc749951e43bca209734bb64df4280610a7da57fbb0ffff44"
 
       def install
         bin.install "bytehouse-cli"
@@ -19,8 +19,8 @@ class BytehouseCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.6.24/bytehouse-cli_1.6.24_macOS_arm64.tar.gz"
-      sha256 "6d335c87f773439da9af3f1ab5415dc523846cf30b7c8772d392e2c7b538ee94"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.27/bytehouse-cli_1.5.27_macOS_arm64.tar.gz"
+      sha256 "2fb1252f07f08ec803a12004e06dde41fd9b14527b50385d4da789c4587a0450"
 
       def install
         bin.install "bytehouse-cli"
@@ -31,8 +31,8 @@ class BytehouseCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.6.24/bytehouse-cli_1.6.24_Linux_x86_64.tar.gz"
-      sha256 "2e924a630877f85d4184d5f64b98e5bbe7e9ea36c7992dd4e7b8277e025fb39d"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.27/bytehouse-cli_1.5.27_Linux_x86_64.tar.gz"
+      sha256 "eeeabc5825d6bb4a66eef8323c009240834ac87bc40c7edf3fb09f2878874bf1"
 
       def install
         bin.install "bytehouse-cli"
@@ -40,9 +40,6 @@ class BytehouseCli < Formula
       end
     end
   end
-
-  depends_on "go"
-  depends_on "git"
 
   def caveats; <<~EOS
     Bytehouse SQL Gateway Command Line Interface to interact with cnch via gateway
