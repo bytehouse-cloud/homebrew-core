@@ -10,8 +10,8 @@ class BytehouseCli < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/1.5.42/bytehouse-cli_1.5.42_macOS_x86_64.tar.gz"
-      sha256 "21eda036279b81e568ca430e32dbf6a0b3c03d846a28d48724492e2de78118b0"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.42/bytehouse-cli_1.5.42_macOS_x86_64.tar.gz"
+      sha256 "df6cd809692c5ac2a02826e596ab75373c3d37df3e8cc02e999ec6508ef1248c"
 
       def install
         bin.install "bytehouse-cli"
@@ -19,8 +19,8 @@ class BytehouseCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/1.5.42/bytehouse-cli_1.5.42_macOS_arm64.tar.gz"
-      sha256 "257d0b18251cf83d023b38fcc6d68fe0098b612b19fce9cc1d13b6baf63a4073"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.42/bytehouse-cli_1.5.42_macOS_arm64.tar.gz"
+      sha256 "76ff4d2f9e62bd210b2b502ce3b3135c492b808d725aa73ce3b8373af572bde3"
 
       def install
         bin.install "bytehouse-cli"
@@ -31,8 +31,8 @@ class BytehouseCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/1.5.42/bytehouse-cli_1.5.42_Linux_x86_64.tar.gz"
-      sha256 "76e819944d509c764c48ae31084d6ad2f79e812129f5fd3ed223655b1ec00c4c"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.5.42/bytehouse-cli_1.5.42_Linux_x86_64.tar.gz"
+      sha256 "7fe4322e1da5fcf017f3b2398df94ab7ea357512c868f2ea81a5d6f135ae7ea2"
 
       def install
         bin.install "bytehouse-cli"
