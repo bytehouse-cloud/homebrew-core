@@ -5,13 +5,13 @@
 class BytehouseCli < Formula
   desc "ByteHouse SQL Gateway Command-Line Interface"
   homepage "https://github.com/bytehouse-cloud/cli"
-  version "1.16.3"
+  version "1.16.4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.3/bytehouse-cli_1.16.3_macOS_arm64.tar.gz"
-      sha256 "c1df83b0ddef3efde386993b5ccaf46cecd3cf178f0b8f7c33864c1f61c09c9c"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.4/bytehouse-cli_1.16.4_macOS_arm64.tar.gz"
+      sha256 "2888b263d8804557af65f8096dc458e8dd6c77555bf93110455edd3cfc5700bb"
 
       def install
         bin.install "bytehouse-cli"
@@ -19,8 +19,8 @@ class BytehouseCli < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.3/bytehouse-cli_1.16.3_macOS_x86_64.tar.gz"
-      sha256 "d8cb89cd856c96d14991f518d9f4acabcd181f3dfae090c961659f1b21d84aa6"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.4/bytehouse-cli_1.16.4_macOS_x86_64.tar.gz"
+      sha256 "6d22b3e3eb7cc9172ea07f2e1966e7f8ebfe45b09528344aa03aabe5b72a2bb8"
 
       def install
         bin.install "bytehouse-cli"
@@ -31,8 +31,8 @@ class BytehouseCli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.3/bytehouse-cli_1.16.3_Linux_x86_64.tar.gz"
-      sha256 "5e2795eff24b832bf4aa826a05089b925b20e69131a7ca3ba5b118610c0e321b"
+      url "https://github.com/bytehouse-cloud/cli/releases/download/v1.16.4/bytehouse-cli_1.16.4_Linux_x86_64.tar.gz"
+      sha256 "3aad3fd7d5ca794aa1cb415bc574517d755047b0b7c788db7de37d9334b940c0"
 
       def install
         bin.install "bytehouse-cli"
